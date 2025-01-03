@@ -1,0 +1,10 @@
+package main
+
+import (
+	"leetcode/2270"
+	"leetcode/utils"
+)
+
+func main() {
+	utils.Log(leetcode.Run([]int{0, 4, -8, 7}))
+}

@@ -1,0 +1,17 @@
+package contains_duplicate
+
+//Tempo: O(n)
+//Espaço: O(n)
+
+func ContainsDuplicate(nums []int) bool {
+	aux := make(map[int]int)
+	size := len(nums)
+	for i := 0; i < size; i++ {
+		_, hasKeyValue := aux[nums[i]]
+		if hasKeyValue {
+			return true
+		}
+		aux[nums[i]] = 1
+	}
+	return false
+}
